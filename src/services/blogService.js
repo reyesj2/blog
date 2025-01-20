@@ -1,3 +1,4 @@
+// This service will interact with Cloudflare R2
 const BASE_URL = import.meta.env.CF_R2_URL || '';
 
 export async function fetchBlogPosts() {
