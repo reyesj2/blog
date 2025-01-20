@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "getting-started",
+    "title": "Getting Started with Vue.js",
+    "date": "2024-03-19",
+    "excerpt": "Learn the basics of Vue.js and how to create your first application."
+  },
+  {
+    "slug": "using-markdown",
+    "title": "Writing Blog Posts in Markdown",
+    "date": "2024-03-20",
+    "excerpt": "A guide to writing and formatting your blog posts using Markdown syntax."
+  }
+]
