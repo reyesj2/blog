@@ -33,5 +33,9 @@ coverage
 .wrangler
 .dev.vars
 
+wrangler.toml
+worker.js
+
+
 # Environment variables
 .env

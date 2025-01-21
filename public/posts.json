@@ -1,14 +1,32 @@
 [
   {
-    "slug": "getting-started",
-    "title": "Getting Started with Vue.js",
-    "date": "2024-03-19",
-    "excerpt": "Learn the basics of Vue.js and how to create your first application."
+    "slug": "cool-dog",
+    "title": "One Cool Dog",
+    "date": "2025-01-20",
+    "excerpt": "Meet our stylish canine friend who knows how to rock a pair of glasses!"
   },
   {
     "slug": "using-markdown",
     "title": "Writing Blog Posts in Markdown",
-    "date": "2024-03-20",
+    "date": "2025-01-19",
     "excerpt": "A guide to writing and formatting your blog posts using Markdown syntax."
+  },
+  {
+    "slug": "Firstblog",
+    "title": "First Blog",
+    "date": "2025-01-18",
+    "excerpt": "My first blog post"
+  },
+  {
+    "slug": "using-images",
+    "title": "Using Images in Blog Posts",
+    "date": "2025-01-17",
+    "excerpt": "Learn how to include and optimize images in your blog posts using Markdown and R2 storage."
+  },
+  {
+    "slug": "getting-started",
+    "title": "Getting Started with Vue.js",
+    "date": "2025-01-14",
+    "excerpt": "Learn the basics of Vue.js and how to create your first application."
   }
 ]

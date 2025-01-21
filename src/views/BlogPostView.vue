@@ -34,10 +34,26 @@ onMounted(async () => {
     if (lines[0].startsWith('# ')) {
       title.value = lines[0].substring(2);
       const contentWithoutTitle = lines.slice(1).join('\n');
-      renderedContent.value = marked(contentWithoutTitle);
+      // Replace relative image paths with full URLs
+      const processedContent = contentWithoutTitle.replace(
+        /!\[([^\]]*)\]\(([^)]+)\)/g,
+        (match, alt, path) => {
+          const fullUrl = path.startsWith('http') ? path : `${import.meta.env.VITE_CF_R2_URL}/${path}`;
+          return `![${alt}](${fullUrl})`;
+        }
+      );
+      renderedContent.value = marked(processedContent);
     } else {
       title.value = route.params.slug;
-      renderedContent.value = marked(content);
+      // Replace relative image paths with full URLs
+      const processedContent = content.replace(
+        /!\[([^\]]*)\]\(([^)]+)\)/g,
+        (match, alt, path) => {
+          const fullUrl = path.startsWith('http') ? path : `${import.meta.env.VITE_CF_R2_URL}/${path}`;
+          return `![${alt}](${fullUrl})`;
+        }
+      );
+      renderedContent.value = marked(processedContent);
     }
   } catch (err) {
     error.value = 'Error loading blog post';
